@@ -2,7 +2,7 @@ from django.http import Http404
 from django.shortcuts import render
 from rest_framework import views, status
 from rest_framework.response import Response
-from chatbot.helpers import custom_response
+from chatbot.helpers import custom_response, parse_request
 from users.models import User
 import bcrypt
 from rest_framework_simplejwt.tokens import RefreshToken
